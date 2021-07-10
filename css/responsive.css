@@ -7,22 +7,155 @@
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .main-menu ul li {
+        margin-left: 21px;
+    }
+    .menu-logo {
+        margin-top: 35px;
+    }
+    .quate-text {
+        margin-right: 88px;
+    }
+    .footer-conten {
+        padding: 0px 200px;
+    }
 
 }
 
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
-
+    .header-cta span {
+        margin-right: 20px;
+    }
+    .menu-logo {
+        margin-top: 17px;
+    }
+    .header-right {
+        margin-top: 0;
+        margin-left: 0;
+        display: block;
+        visibility: hidden;
+    }
+    .main-menu ul li {
+        margin-left: 19px;
+        margin-top: -71px;
+    }
+    .service-wrapper {
+        margin-bottom: 20px;
+    }
+    .slider-thumb {
+        display: none;
+    }
+    .slider-text{
+        text-align: center;
+    }
+    .fea-head {
+        padding: 0px 80px;
+    }
+    .fea-wrapper {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .ceo-text {
+        margin-bottom: 100px;
+    }
+    .fact-text {
+        margin-left: 13px;
+        display: inline-block;
+        margin-top: -2px;
+    }
+    .abo{
+        margin-top: -56px;
+        margin-left: 70px;
+    }
+    .fact-text span {
+        color: #fff;
+        font-size: 16px;
+    }
+    .quate-area {
+        padding: 100px 0;
+    }
+    .quate-select {
+        margin-bottom: 20px;
+    }
+    .test-content {
+        padding: 0 40px;
+    }
+    .normal {
+        width: 158px;
+    }
+    .footer-conten {
+        padding: 0 60px;
+    }
+    .slider-text {
+        margin-top: 80px;
+    }
 }
 
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+    .header-cta span {
+        color: #fff;
+        opacity: 0.5;
+        margin-right: 15px;
+        font-size: 16px;
+    }
+    .header-social {
+        position: relative;
+        margin-top: -24px;
+    }
+    .header-right {
+        display: none;
+    }
+    .slider-thumb {
+        display: none;
+    }
+    .fea-head {
+        padding: 0px 40px;
+    }
+    .fea-head h2 {
+        font-size: 30px;
+    }
+    .fea-wrapper {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .ceo-text {
+        margin-top: 20px;
+    }
+    .fact-wrapper.mb-30 {
+        margin-left: 100px;
+        margin-bottom: 48px;
+    }
+    .service-wrapper {
+        border: 4px solid #eeeeee;
+        padding: 70px 34px;
+        margin-bottom: 20px;
+    }
+    .single-team {
+        width: 33%;
+    }
+    .hi{
+        display: none;
+    }
+    .quate-select {
+        margin-bottom: 20px;
+    }
+    .test-content {
+        padding: 0 19px;
+    }
+    .brand-active {
+        padding: 0 75px;
+    }
+    .normal {
+        width: 200px !important;
+    }
+    .footer-conten {
+        padding:  25px;
+    }
 
- 
 }
  
 /* Large Mobile :480px. */
