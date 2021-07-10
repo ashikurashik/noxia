@@ -142,7 +142,7 @@ $.scrollUp({
 	animation: 'fade', // Fade, slide, none
 	animationInSpeed: 200, // Animation in speed (ms)
 	animationOutSpeed: 200, // Animation out speed (ms)
-	scrollText: '<i class="icofont icofont-long-arrow-up"></i>', // Text for element
+	scrollText: '<i class="fas fa-angle-double-up"></i>', // Text for element
 	activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
 });
 
@@ -161,6 +161,40 @@ $('.testimonial-active').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	arrows: false,
+	
+  });
+  $('.brand-active').slick({
+	dots: false,
+	infinite: true,
+	speed: 300,
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	arrows: false,
+	responsive: [
+		{
+		  breakpoint: 1024,
+		  settings: {
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			infinite: true,
+			dots: true
+		  }
+		},
+		{
+		  breakpoint: 800,
+		  settings: {
+			slidesToShow: 3,
+			slidesToScroll: 1
+		  }
+		},
+		{
+		  breakpoint: 700,
+		  settings: {
+			slidesToShow: 2,
+			slidesToScroll: 1
+		  }
+		}
+	]
 	
   });
 
