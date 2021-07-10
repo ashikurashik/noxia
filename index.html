@@ -30,17 +30,17 @@
 
 
         <!-- header-start -->
-        <header class="transparent-header">
+        <header class="transparent-header header-sticky">
             <div class="topbar-area">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="header-cta">
                                 <span><i class="far fa-envelope"></i> hello@mexo.com</span>
                                 <span><i class="fas fa-phone"></i>8 800 567.890.11</span>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="header-social text-right">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -54,18 +54,18 @@
             <div class="menu-area">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 d-flex align-items-center">
-                            <div class="menu-logo">
+                        <div class="col-lg-3 col-md-2 align-items-center flex align-items-center">
+                            <div class="menu-logo ">
                                 <img src="img/logo/header-logo.png" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-9">
-                            <div class="header-right f-right">
-                                <a class="mini-cart" href=""><i class="fas fa-shopping-cart"></i> <span class="cart-count">3</span> </a>
-                                <a href=""><i class="fas fa-search"></i></a>
+                        <div class="col-lg-9 col-md-10">
+                            <div class="header-right f-right ">
+                                <a class="mini-cart"  href=""><i class="fas fa-shopping-cart"></i> <span class="cart-count">3</span> </a>
+                                <a href="" data-toggle="modal" data-target="#searchleModal"><i class="fas fa-search"></i></a>
                             </div>
                             <div class="main-menu f-right">
-                                <nav>
+                                <nav  id="mobile-menu">
                                     <ul>
                                         <li><a href="#">Home</a></li>
                                         <li><a href="#">Pages</a></li>
@@ -75,13 +75,27 @@
                                         <li><a href="#">Shop</a></li>
                                     </ul>
                                 </nav>
+
                             </div>
+                            <div class="mobile-menu"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <!-- header-end -->
+        <div class="modal fade" id="searchleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <form action="#">
+                        <input type="text" placeholder="search">
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
         <!-- main-area -->
@@ -94,7 +108,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <div class="slider-text">
+                                    <div class="slider-text ">
                                         <h2 data-animation="fadeInUp" data-delay=".3s">We Make Agency
                                             with Excellence
                                             Services.</h2>
@@ -298,7 +312,7 @@
              <section class="fact-area pt-100 pb-55 black-bg">
                  <div class="container">
                      <div class="row">
-                         <div class="col-lg-4">
+                         <div class="col-lg-4 col-sm-4">
                              <div class="fact-wrapper mb-30">
                                  <div class="fact-icon f-left mr-15">
                                      <img src="img/icon/massege.png" alt="">
@@ -309,7 +323,7 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="col-lg-4">
+                         <div class="col-lg-4 col-sm-4">
                              <div class="fact-wrapper mb-30">
                                  <div class="fact-icon f-left mr-15">
                                      <img src="img/icon/heart.png" alt="">
@@ -320,12 +334,12 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="col-lg-4">
+                         <div class="col-lg-4 col-sm-4">
                              <div class="fact-wrapper mb-30">
                                  <div class="fact-icon f-left mr-15">
                                      <img src="img/icon/star.png" alt="">
                                  </div>
-                                 <div class="fact-text fix">
+                                 <div class="fact-text fix abo">
                                     <h2> <span class="counter">5161</span></h2>
                                     <span> positive feedbacks</span>
                                  </div>
@@ -551,7 +565,7 @@
                         <span>Lead Developer</span>
                     </div>
                 </div>
-                <div class="single-team">
+                <div class="single-team hi">
                     <img src="img/team/team-02.jpg" alt="">
                     <div class="team-text text-center">
                         <h2>Victoria Floyd</h2>
@@ -565,7 +579,7 @@
                         <span>Lead Developer</span>
                     </div>
                 </div>
-                <div class="single-team">
+                <div class="single-team hi">
                     <img src="img/team/team-04.jpg" alt="">
                     <div class="team-text text-center">
                         <h2>Victoria Floyd</h2>
@@ -587,7 +601,7 @@
             <section class="quate-area pt-160 pb-140 fix" style="background-image: url(img/bg/quate.png);">
                 <div class="container">
                     <div class="row ">
-                        <div class="col-lg-10 text-center offset-lg-3 quate-form">
+                        <div class="col-lg-10 col-md-12 col-sm-12 text-center offset-lg-3 quate-form">
                             <div class="quate-text">
                                 <h2><span>Leading the way</span> in bulding & civil construction forever</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis tortor ex. Morbi cursus sed neque quis dictum. Duis bibendum ullamcorper pharetra.lis.spendisse maximus </p>
@@ -701,32 +715,119 @@
              </section>
              <!-- testimonial-area -->
 
-
-             <section class="brand-area">
-                 <div class="brand-active">
-                     <div class="single-brand"><div class="container">
-                         <div class="row">
-                            <div class="col-lg-2">                                        
-                                <div class="brand-img">
-                                    <img src="img/brandd/" alt="">
+             <!-- brand-area star -->
+             <section class="brand-area pt-130 pb-130">
+                 <div class="brand-active text-center">
+                    <div class="single-brand">
+                        <div class="container normal">
+                            <div class="row">
+                                <div class="col-lg-2">                                        
+                                    <div class="brand-img">
+                                        <img src="img/brand/brand-01.png" alt="">
+                                    </div>
                                 </div>
                             </div>
-                         </div>
-                     </div>
-                     </div>
+                        </div>
+                    </div>
+                    <div class="single-brand">
+                        <div class="container normal">
+                            <div class="row">
+                                <div class="col-lg-2">                                        
+                                    <div class="brand-img">
+                                        <img src="img/brand/brand-02.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-brand">
+                        <div class="container normal">
+                            <div class="row">
+                                <div class="col-lg-2">                                        
+                                    <div class="brand-img">
+                                        <img src="img/brand/brand-03.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-brand">
+                        <div class="container normal">
+                            <div class="row">
+                                <div class="col-lg-2">                                        
+                                    <div class="brand-img">
+                                        <img src="img/brand/brand-04.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-brand">
+                        <div class="container normal">
+                            <div class="row">
+                                <div class="col-lg-2">                                        
+                                    <div class="brand-img">
+                                        <img src="img/brand/brand-05.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-brand">
+                        <div class="container normal">
+                            <div class="row">
+                                <div class="col-lg-2">                                        
+                                    <div class="brand-img">
+                                        <img src="img/brand/brand-03.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                  </div>
              </section>
-
-
-
-
-
-
-
-
-
+             <!-- brand-area end -->
 
         </main>
+
+
+        <footer>
+            <div class="footer-top black pt-140 pb-70">
+                <div class="contianer">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                            <div class="footer-logo mb-40">
+                                <img src="img/logo/header-logo.png" alt="">
+                            </div>
+                            <div class="footer-conten mb-50">
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
+                            </div>
+                            <div class="footer-icn">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"> <i class="fab fa-google-plus-g"></i></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></i></a>
+                                <a href="#"><i class="fas fa-camera-retro"></i></a>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom pt-30 pb-20 text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer-bo-text">
+                                <p>© All right reserved 2019. <span>Noxia</span> - Creative Agency Website PSD Template.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
 
@@ -767,14 +868,14 @@
         <script src="js/one-page-nav-min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.meanmenu.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/ajax-form.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/jquery.scrollUp.min.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/plugins.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
