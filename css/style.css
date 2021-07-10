@@ -387,6 +387,9 @@ label {
 	padding: 13px 0;
 	border-bottom: 1px solid #583372;
 }
+.menu-logo {
+	margin-top: 35px;
+}
 .header-cta span {
 	color: #fff;
 	opacity: 0.5;
